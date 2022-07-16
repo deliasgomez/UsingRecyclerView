@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--general dimensions components-->
+    <dimen name="size_5">5dp</dimen>
+    <dimen name="size_10">10dp</dimen>
+    <dimen name="size_15">15dp</dimen>
+    <dimen name="size_20">20dp</dimen>
+    <!--general dimensions text size-->
+    <dimen name="size_text_20">20sp</dimen>
+    <dimen name="size_text_30">30sp</dimen>
+</resources>
