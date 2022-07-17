@@ -8,4 +8,6 @@
     <!--general dimensions text size-->
     <dimen name="size_text_20">20sp</dimen>
     <dimen name="size_text_30">30sp</dimen>
+    <!--specific dimensions-->
+    <dimen name="size_height_list_item">100dp</dimen>
 </resources>

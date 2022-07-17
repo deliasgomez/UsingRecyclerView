@@ -2,7 +2,6 @@ package com.example.usingrecyclerview
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.usingrecyclerview.data.DataSource
 import com.example.usingrecyclerview.databinding.ActivityMainBinding
@@ -14,12 +13,11 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val myDataSet = DataSource.affirmations
+        val myDataSet = DataSource().loadAffirmations()
         val manager = LinearLayoutManager(this)
-        val decoration = DividerItemDecoration(this,manager.orientation)
         binding.recyclerView.layoutManager = manager
-        binding.recyclerView.adapter = ItemAdapter(myDataSet)
-        binding.recyclerView.addItemDecoration(decoration)
+        binding.recyclerView.adapter = ItemAdapter(this, myDataSet)
+
 
 
     }

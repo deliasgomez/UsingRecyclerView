@@ -1,3 +1,9 @@
 package com.example.usingrecyclerview.model
 
-data class Affirmation(val affirmation : String)
+import androidx.annotation.DrawableRes
+import androidx.annotation.StringRes
+
+data class Affirmation(
+    @StringRes val stringResourceId : Int,
+    @DrawableRes val imageResourceId : Int
+)
